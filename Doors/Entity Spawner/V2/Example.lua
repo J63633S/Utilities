@@ -6,14 +6,14 @@ local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 local entity = spawner.Create({
 	Entity = {
-		Name = "Template Entity",
+		Name = "A-150",
 		Asset = "https://github.com/RegularVynixu/Utilities/raw/main/Doors/Entity%20Spawner/Assets/Entities/Rush.rbxm",
 		HeightOffset = 0
 	},
 	Lights = {
 		Flicker = {
 			Enabled = true,
-			Duration = 1
+			Duration = 77
 		},
 		Shatter = true,
 		Repair = false
@@ -35,7 +35,7 @@ local entity = spawner.Create({
 		Enabled = true,
 		Type = "Ambush", -- "Blitz"
 		Min = 1,
-		Max = 1,
+		Max = 5,
 		Delay = 2
 	},
 	Damage = {
@@ -50,9 +50,9 @@ local entity = spawner.Create({
 		Break = true
 	},
 	Death = {
-		Type = "Guiding", -- "Curious"
-		Hints = {"Death", "Hints", "Go", "Here"},
-		Cause = ""
+		Type = "Curious", -- "Curious"
+		Hints = {"Oh...Hello.", "It seems youve died to that red thing...", "It spawns at door 150.. Call it A-150.", "Good luck."},
+		Cause = "Not careful."
 	}
 })
 
